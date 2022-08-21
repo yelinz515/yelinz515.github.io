@@ -5,6 +5,8 @@
   width: 100%;
   grid-template-columns: 49.3% 49.3%;
   column-gap: 1.4%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 
   .post-card {
     display: flex;
@@ -38,6 +40,7 @@
       font-weight: 500;
       color: grey;
       margin-bottom: 5px;
+      font-family: var(--font-heading);
     }
 
     .title {
@@ -45,6 +48,7 @@
       font-weight: 600;
       margin-bottom: 7px;
       line-height: 1.4;
+      font-family: var(--font-heading);
     }
   }
 }

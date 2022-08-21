@@ -4,6 +4,7 @@ import PageHeader from '../components/page-header';
 import PageFooter from '../components/page-footer';
 import ThemeSwitch from '../components/theme-switch';
 import './style.scss';
+import Utterances from '../../../yelinz515_storage/Utterances';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -27,6 +28,7 @@ const Layout = ({ children }) => {
     <div className="page-wrapper">
       <PageHeader siteTitle={title || `Title`} />
       <main className="page-content">{children}</main>
+      <Utterances />
       <PageFooter
         author={author.name || `Author`}
         githubUrl={author.social?.github || `https://www.github.com`}

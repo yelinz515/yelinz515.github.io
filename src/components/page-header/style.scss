@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: space-between;
     @include content-max-width;
+    font-family: var(--font-body);
 
     .link {
       font-weight: 700;
