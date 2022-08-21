@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-category-template-js",
     "path": "/posts/codestates",
-    "result": {"pageContext":{"currentCategory":"codestates","categories":["All","codestates","블로그","featured"],"edges":[{"node":{"id":"fbcb850e-8fa0-5a53-95aa-3dd74630a064","excerpt":"를 생성하고 바로 이런 오류가 났다. 해결방법:\n에 categories를 추가하면 된다. tag 현재 태그는 블로그 리스트 하단에 보이고, 태그로 포스팅을 검색 가능하게 한다. 이 블로그 테마의 가장 큰 장점인 것 같다. 주의할 점 과 을 동시에 하면 오류난다.","fields":{"slug":"/codestates_blogging/"},"frontmatter":{"categories":"codestates 블로그","title":"댓글 추가 + 블로깅 마이그레이션 + 블로그 디자인 수정중","date":"August 21, 2022"}},"next":{"fields":{"slug":"/gatsby-github-blog/"}},"previous":null}]}},
+    "result": {"pageContext":{"currentCategory":"codestates","categories":["All","codestates","blog","featured"],"edges":[{"node":{"id":"7fdbdecc-6e59-555e-87ec-774005867984","excerpt":"를 생성하고 바로 이런 오류가 났다. 해결방법:\n에 categories를 추가하면 된다. tag 현재 태그는 블로그 리스트 하단에 보이고, 태그로 포스팅을 검색 가능하게 한다. 이 블로그 테마의 가장 큰 장점인 것 같다. 주의할 점 과 을 동시에 하면 오류난다.","fields":{"slug":"/zoomcoding_theme/"},"frontmatter":{"categories":"codestates blog","title":"블로깅 마이그레이션 + 블로그 디자인 수정중","date":"August 21, 2022"}},"next":{"fields":{"slug":"/gatsby-github-blog/"}},"previous":null}]}},
     "staticQueryHashes": ["1073350324","1956554647","2938748437"]}
