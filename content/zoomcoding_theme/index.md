@@ -1,10 +1,10 @@
 ---
-emoji: 🔮
-title: 블로깅 마이그레이션 + 블로그 디자인 수정중
+emoji: 👏
+title: Gatsby 테마 바꾸기
 date: '2022-08-21'
 author: 김예린
 tags: 블로그 github-pages gatsby
-categories: codestates blog
+categories: featured blog
 ---
 
 ```js
@@ -37,3 +37,10 @@ File: gatsby-node.js:33:56
 ### 주의할 점
 
 `gatsby develop`과 `npm run deploy`을 동시에 하면 오류난다.
+
+<br>
+
+### 마무리
+---
+
+공부할 겸 이 블로그 테마에 맞게 블로그를 수정하거나 내가 원하는 기능과 디자인으로 바꿔야겠다.

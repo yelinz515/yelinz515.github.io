@@ -675,7 +675,7 @@
 .markdown hr {
   height: 0.25em;
   padding: 0;
-  margin: 24px 0;
+  margin-top: -7px; // margin: 24px 0;
   background-color: var(--markdown-border-color);
   border: 0;
 }
