@@ -673,7 +673,7 @@
 }
 
 .markdown hr {
-  height: 0.25em;
+  height: 0.1em;
   padding: 0;
   margin-top: -7px; // margin: 24px 0;
   background-color: var(--markdown-border-color);
@@ -813,6 +813,7 @@
   max-width: 100%;
   box-sizing: initial;
   background-color: transparent;
+  filter: drop-shadow(0px 3px 7px #838383);
 }
 
 .markdown img[align='right'] {
@@ -822,7 +823,6 @@
 .markdown img[align='left'] {
   padding-right: 20px;
 }
-
 .markdown code {
   padding: 0.2em 0.4em;
   margin: 0;

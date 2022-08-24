@@ -7,8 +7,6 @@ tags: 블로그 react
 categories: codestates blog
 ---
 
-### JavaScript koans 풀었던 과정과 새롭게 알게 된 것😄
-
 ### 01_Introduction.js
 
 ✨ **expect** 함수
