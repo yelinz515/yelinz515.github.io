@@ -38,13 +38,15 @@ Figma를 사용해서 기존 운영중인 서비스의 화면의 디자인을 �
 
 * **이미지 자동 넘기기**
 
-필요한 사진을 하나의 컴포넌트로 만든다. 그 컴포넌트에 After delay를 적용하면 설정해놓은 시간에 맞게 이미지가 넘어간다.
+필요한 사진을 하나의 프레임으로 묶는다. 참고로 Clip content를 선택하면 프레임 상에서 어떤 이미지가 뜨는지 알 수 있다. 프레임을 필요한 만큼 복제해 해당 이미지가 나타날 수 있게 변경해준다. 후에 모든 프레임을 선택하여 Component 오른쪽 drop down을 클릭해 Create component set을 눌러준다. 
+
+컴포넌트 안 각 이미지에 After delay를 적용해 change to로 **다음 이미지**로 넘어갈 수 있도록 설정해준다. 
 
 ![github-blog.png](after_delay.PNG)
 
-결과 화면은 이렇다.
+**결과 화면**
 
-![github-blog.png](food_delay.gif)
+![github-blog.png](ifood.gif)
 
 
 <br>
