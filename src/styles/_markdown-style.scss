@@ -673,12 +673,14 @@
 }
 
 .markdown hr {
-  height: 0.1em;
+  height: 0.02em;
   padding: 0;
   margin-top: -7px; // margin: 24px 0;
   background-color: var(--markdown-border-color);
   border: 0;
 }
+
+
 
 .markdown blockquote {
   padding: 0 1em;
@@ -946,6 +948,10 @@
 .markdown .pl-token:hover {
   cursor: pointer;
   background: #ffea7f;
+}
+
+.token.comment {
+  font-family: var(--font-body);
 }
 
 .markdown .tab-size[data-tab-size='1'] {

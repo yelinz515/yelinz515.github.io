@@ -16,6 +16,22 @@ MDN가서 메소드나 함수를 참고하면 좋을 것 같다 😊 실제로 �
 
 #### #20
 ---
+```js
+function countAllCharacters(str) {
+  // TODO: 여기에 코드를 작성합니다.
+  obj = {}; // 빈 객체 생성
+  for(let el in str){
+    if(obj[str[el]] === undefined){ // 처음 시작할 때 obj는 아무런 값이 없으니까
+      obj[str[el]] = 0;  // 빈 객체에 각 요소의 값을 0으로 리턴한다, ''도 가능!
+    }
+    obj[str[el]]++; // 0으로 초기화 했으니 이제 개수를 세서 값으로 넣어주면 된다
+  }
+  return obj;
+
+  console.log(obj)
+}
+countAllCharacters('banana') 
+```
 
 #### #21
 ---
