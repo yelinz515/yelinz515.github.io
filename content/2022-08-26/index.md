@@ -83,7 +83,7 @@ const GlobalStyle = createGlobalStyle`
 `
 ```
 
- `<GlobalStyle>` 컴포넌트를 최상위 컴포넌트에서 사용해주면 전역에 `<GlobalStyle>`ㄴ 컴포넌트의 스타일이 적용된다.
+ `<GlobalStyle>` 컴포넌트를 최상위 컴포넌트에서 사용해주면 전역에 `<GlobalStyle>` 컴포넌트의 스타일이 적용된다.
 
 #### App.js
 

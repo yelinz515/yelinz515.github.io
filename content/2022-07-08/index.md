@@ -1,5 +1,5 @@
 ---
-title: "[3주차] 객체 20번 21번 문제 - 5일차"
+title: "객체 코플릿 (ft. 20번 21번)"
 date: "2022-07-08T23:41:32.169Z"
 author: 김예린
 tags: 블로그 react
@@ -16,6 +16,7 @@ MDN가서 메소드나 함수를 참고하면 좋을 것 같다 😊 실제로 �
 
 #### #20
 ---
+
 ```js
 function countAllCharacters(str) {
   // TODO: 여기에 코드를 작성합니다.
@@ -35,6 +36,37 @@ countAllCharacters('banana')
 
 #### #21
 ---
+
+```js
+function mostFrequentCharacter(str) {
+  // TODO: 여기에 코드를 작성합니다.
+  // 문자열을 띄어쓰기 없이 합치고
+  // 개수를 세서
+  // 가장 큰 값 출력
+ let arr = str.split(' ') // [ 'bad', 'apple' ]
+ let newStr = arr.join('') // 'badapple'
+ let obj = {}
+ let max = 0
+ let result = ''
+ 
+ for(let i of newStr){
+   if(obj[i]){ // i 값이 있으면 그 i값에 1을 더한다.
+     obj[i] += 1
+   }
+   else {
+     obj[i] = 1 // i 값이 없으면 1로 초기화
+   }
+   
+   if(max < obj[i]){
+     max = obj[i]
+     result = i
+   }
+ }
+ return result
+}
+
+mostFrequentCharacter('bad apple')
+```
 
 <br>
 
