@@ -1,6 +1,6 @@
 ---
 title: "TypeScript 기본 문법(수정)"
-date: "2022-08-29"
+date: "2022-08-28"
 author: 김예린
 categories: blog study
 ---

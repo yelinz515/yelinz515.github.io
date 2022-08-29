@@ -31,7 +31,7 @@ function countAllCharacters(str) {
 
   console.log(obj)
 }
-countAllCharacters('banana') 
+countAllCharacters('banana') // {b: 1, a: 3, n: 2}
 ```
 
 #### #21
@@ -65,7 +65,7 @@ function mostFrequentCharacter(str) {
  return result
 }
 
-mostFrequentCharacter('bad apple')
+mostFrequentCharacter('bad apple') // 'a'
 ```
 
 <br>
