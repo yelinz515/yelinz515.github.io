@@ -1,7 +1,7 @@
 ---
 emoji: 📔
 title: "React Custom Component"
-date: "2022-08-29"
+date: "2022-08-30"
 author: 김예린
 categories: codestates blog
 ---
@@ -46,7 +46,7 @@ Styled-Component, useRef를 이용해 과제를 해보았다. 어려웠던 부�
 
 <br>
 
-### Autocomplete.js
+### Autocomplete.js(수정)
 ---
 
 ```js
