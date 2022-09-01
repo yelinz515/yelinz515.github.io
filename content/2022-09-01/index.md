@@ -8,6 +8,7 @@ categories: codestates blog
 Redux에 들어가기에 앞서, mutate state가 무엇인지 알아보자. 
 
 ## mutate state
+---
 
 ```js
 const reducer = (state = [], action) => {
@@ -51,5 +52,36 @@ Redux에서 저장소나 리듀서에서 상태 불변성을 지키자. NEVER! M
 <br>
 
 ## Redux
+---
 
-## Cmarket Redux(1)
+![github-blog-1.png](redux-data-flow.gif) [Redux 구조]
+
+
+<details>
+<summary>Redux는 다음과 같은 순서로 상태를 관리한다.</summary>
+<div markdown="1">       
+<br>
+
+1. 상태가 변경되어야 하는 이벤트가 발생하면, 변경될 상태에 대한 정보가 담긴 `Action` 객체가 생성된다.
+
+2. 이 Action 객체는 `Dispatch` 함수의 인자로 전달된다.
+
+3. Dispatch 함수는 Action 객체를 `Reducer` 함수로 전달한다.
+
+4. Reducer 함수는 Action 객체의 값을 확인하고, 그 값에 따라 전역 상태 저장소 `Store`의 상태를 변경한다.
+
+5. 상태가 변경되면, React는 화면을 다시 **렌더링** 한다.
+
+<br>
+</div>
+</details>
+
+정리하면, Redux에서는 Action → Dispatch → Reducer → Store
+순서로 데이터가 **단방향**으로 흐르게 된다.
+
+<br>
+
+## Cmarket Redux 예고
+---
+
+내일까지 진행되는 과제인 Cmarket Redux는 다음 포스팅에서 뵙겠습니다.
