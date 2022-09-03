@@ -46,7 +46,7 @@ Styled-Component, useRef를 이용해 과제를 해보았다. 어려웠던 부�
 
 <br>
 
-### Autocomplete.js(수정)
+### Autocomplete.js
 ---
 
 ```js
@@ -80,54 +80,25 @@ export const Autocomplete = () => {
   const handleInputChange = (event) => {
     const { value } = event.target;
 
-    // input에 텍스트가 있는지 없는지 확인하는 코드
-    value ? setHasText(true) : setHasText(false);
-
-    // updateText
-    setInputValue(value);
-
-    // dropdown을 위한 기능
-    const filterRegex = new RegExp(value, 'i'); // new RegExp 하면, RegExp 객체가 생성(텍스트를 판별할 때 사용)
-    const resultOptions = deselectedOptions.filter((option) =>
-      option.match(filterRegex)
-    );
-    setOptions(resultOptions);
+     setInputValue(event.target.value)
+     setHasText(true);
+     setOptions(deselectedOptions.filter(el => el.includes(event.target.value)))
   };
 
   const handleDropDownClick = (clickedOption) => {
-    setInputValue(clickedOption);
-    const resultOptions = deselectedOptions.filter(
-      (option) => option === clickedOption
-    );
-    setOptions(resultOptions);
+    setInputValue(clickedOption)
+    setOptions(deselectedOptions.filter(el => el.includes(clickedOption)))
   };
 
   const handleDeleteButtonClick = () => {
     setInputValue('');
   };
 
- // 키보드로 DropDown 선택
-  const handleKeyUp = (event) => {
-    if (hasText) {
-      if (event.code === 'ArrowDown' && options.length - 1 > selected) {
-        setSelected(selected + 1);
-      }
-      if (event.code === 'ArrowUp' && selected >= 0) {
-        setSelected(selected - 1);
-      }
-      if (event.code === 'Enter' && selected >= 0) {
-        handleDropDownClick(options[selected]);
-        setSelected(-1);
-      }
-    }
-  };
-
   return (
-    <div className='autocomplete-wrapper' onKeyUp={handleKeyUp}>
+    <div className='autocomplete-wrapper'>
       <InputContainer hasText={hasText}>
         <input
           type='text'
-          className='autocomplete-input'
           onChange={handleInputChange}
           value={inputValue}
         />
@@ -138,32 +109,27 @@ export const Autocomplete = () => {
       {hasText ? (
         <DropDown
           options={options}
-          handleDropDownClick={handleDropDownClick}
-          selected={selected}
+          handleComboBox={handleDropDownClick}
         />
       ) : null}
     </div>
   );
 };
 
-export const DropDown = ({ options, handleDropDownClick, selected }) => {
+export const DropDown = ({ options, handleComboBox }) => {
   return (
     <DropDownContainer>
-      {options.map((option, idx) => (
-        <li
-          key={idx}
-          onClick={() => handleDropDownClick(option)}
-          className={selected === idx ? 'selected' : ''}
-        >
-          {option}
-        </li>
-      ))}
+      {options.map((el, index) => 
+      <li key={index} onClick={() => handleComboBox(el)}>
+        {el}
+      </li>
+      )}
     </DropDownContainer>
   );
 };
 ```
 
-~다시 테스트해보고 설명하도록 하겠습니다.~
+`<input>`에 `value={inputValue}`를 적어줘야 한다는 것을 기억해두자.
 
 <br>
 

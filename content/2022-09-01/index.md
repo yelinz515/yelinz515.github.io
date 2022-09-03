@@ -54,7 +54,7 @@ Redux에서 저장소나 리듀서에서 상태 불변성을 지키자. NEVER! M
 ## Redux
 ---
 
-![github-blog-1.png](redux-data-flow.gif) [Redux 구조]
+![github-blog-1.png](redux-data-flow.gif) [Redux 구조 - FLUX 패턴]
 
 
 <details>
