@@ -15,6 +15,7 @@ categories: codestates blog
     <summary>주요 속성값</summary>
     <div markdown="1">       
     <br>
+    <!-- <caption>아코디언처럼 하려면 이렇게 표 작성해야함. 그게 아니라면 맨 아래처럼 작성</caption> -->
 
     |name 속성값|설명||
     |------|---|---|
@@ -89,4 +90,37 @@ categories: codestates blog
 ```js
 <button aria-label="닫기"> <img src="X.png" /> </button>
 ```
+<br>
+<br>
+<br>
 
+## 참고
+---
+
+<table>
+    <!-- <caption>바밤바 시리즈</caption> -->
+    <thead>
+        <tr>
+            <th id="A">name속성값</th>
+            <th id="B">설명</th>
+        </tr>
+        </thead>
+    <tbody>
+        <tr>
+            <td id="a">description</td>
+            <td headers="B a">콘텐츠에 대한 간략한 설명. 검색 결과에서 제목 밑에 뜨는 내용</td>
+        </tr>
+        <tr>
+            <td id="b">keywords</td>
+            <td headers="B b">웹 페이지의 관련 키워드들을 나열할 대 사용</td>
+        </tr>
+        <tr>
+            <td id="c">author</td>
+            <td headers="B c">콘텐츠의 제작자를 표시</td>
+        </tr>
+    </tbody>
+</table>
+
+오늘 웹 접근성을 배우면 알게 되었는데, 위 두 번째 표는 첫 번째 표와 다르게 작성되었다. 외부적으로는 보이지 않지만 이렇게 쓸 수 있다고 기억하기 위해 작성해놓았다. 
+
+이 표의 장점이라면 꼭 3개의 행렬로 작성하지 않아도 된다는 것!~(아직 첫 번째 표 다루는 방법을 모르는 걸까?ㅋㅋㅋ)~ 
