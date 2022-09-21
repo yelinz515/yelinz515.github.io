@@ -68,7 +68,6 @@ categories: codestates blog
 <br>
 
 <table>
-    <!-- <caption>바밤바 시리즈</caption> -->
     <thead>
         <tr>
             <th>🤫 Problem</th>
