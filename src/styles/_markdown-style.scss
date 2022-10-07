@@ -672,6 +672,12 @@
   margin-bottom: 16px;
 }
 
+.markdown mark {
+  margin-top: 0;
+  margin-bottom: 16px;
+  // background-color: rgb(138, 221, 247);
+}
+
 .markdown hr {
   height: 0.02em;
   padding: 0;
