@@ -14,7 +14,7 @@ module.exports = {
     name: `김예린`,
     bio: {
       role: `개발자`,
-      description: ['사람에 가치를 두는', '능동적으로 일하는', '이로운 것을 만드는', '예비 프론트엔드'],
+      description: ['사람에 가치를 두는', '능동적으로 일하는', '이로운 것을 만드는', '프론트엔드'],
       thumbnail: 'profile-yerin2.gif', // Path to the image in the 'asset' folder
     },
     social: {
@@ -71,7 +71,7 @@ module.exports = {
       },
       // ========================================================
       // ========================================================
-      
+
       // {
       //   title: '개발 블로그 테마 개발',
       //   description:
