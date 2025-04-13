@@ -1,6 +1,6 @@
 ---
 title: "[친절한 SQL 튜닝] 1장"
-date: "2025-04-13 "
+date: "2025-04-13"
 author: 김예린
 tags: 블로그
 categories: database blog
