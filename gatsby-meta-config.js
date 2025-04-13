@@ -1,6 +1,6 @@
 module.exports = {
-  title: `FE YERIN BLOG`,
-  description: `김예린의 개발일기`,
+  title: `YERIN BLOG`,
+  description: `YERIN BLOG`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
   siteUrl: `https://yelinz515.github.io/`,
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
@@ -14,7 +14,7 @@ module.exports = {
     name: `김예린`,
     bio: {
       role: `개발자`,
-      description: ['사람에 가치를 두는', '능동적으로 일하는', '이로운 것을 만드는', '프론트엔드'],
+      description: ['능동적으로 일하는', '항상 발전하는'],
       thumbnail: 'profile-yerin2.gif', // Path to the image in the 'asset' folder
     },
     social: {
@@ -48,7 +48,7 @@ module.exports = {
         links: {
           post: '/posts',
           github: 'https://github.com/yelinz515/yelinz515.github.io',
-          demo: 'https://www.zoomkoding.com',
+          //demo: 'https://www.zoomkoding.com',
         },
       },
     ],
